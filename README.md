@@ -3,5 +3,7 @@
 
 ### It can be used to download all the source code for react
 3. `npm view react dist.tarball` (https://registry.npmjs.org/react/-/react-17.0.2.tgz)
-
 4. `npm install axios`
+
+### Implementing a Caching Layer (Crazy Numbers of Requests)
+5. `npm install localforage`
