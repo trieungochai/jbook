@@ -19,20 +19,31 @@ export const fetchPlugin = (inputCode: string) => {
         }
 
         // Check to see if we have already fetched this file and if it is in the cache
-        const cacheResult = await fileCache.getItem<esbuild.OnLoadResult>(
-          args.path
-        );
+        // const cacheResult = await fileCache.getItem<esbuild.OnLoadResult>(
+        //   args.path
+        // );
 
         // If it is, return its immediately
-        if (cacheResult) {
-          return cacheResult;
-        }
+        // if (cacheResult) {
+        //   return cacheResult;
+        // }
 
         const { data, request } = await axios.get(args.path);
 
+        const fileType = args.path.match(/.css$/) ? "css" : "jsx";
+        const contents =
+          fileType === "css"
+            ? `
+            const style = document.createElement('style');
+            style.innerText = 'body { background-color: "red" }';
+            document.head.appendChild(style);
+        
+        `
+            : data;
+
         const result: esbuild.OnLoadResult = {
           loader: "jsx",
-          contents: data,
+          contents,
           resolveDir: new URL("./", request.responseURL).pathname,
         };
 
