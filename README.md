@@ -7,3 +7,6 @@
 
 ### Implementing a Caching Layer (Crazy Numbers of Requests)
 5. `npm install localforage`
+
+### Open Source Editor
+`npm install --save-exact @monaco-editor/react@3.7.5`
