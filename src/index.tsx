@@ -40,7 +40,13 @@ const App = () => {
     setCode(result.outputFiles[0].text);
   };
 
-  const html = `<script>${code}</script>`;
+  const html = `
+    <script>
+      ${code}
+      <script></script>
+    </script>
+  `;
+  
   return (
     <div>
       <textarea
