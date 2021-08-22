@@ -9,4 +9,4 @@
 5. `npm install localforage`
 
 ### Open Source Editor
-`npm install --save-exact @monaco-editor/react@3.7.5`
+6. `npm install --save-exact @monaco-editor/react@3.7.5`
