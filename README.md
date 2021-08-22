@@ -11,3 +11,4 @@
 ### Open Source Editor
 6. `npm install --save-exact @monaco-editor/react@3.7.5`
 7. `npm install prettier @types/prettier`
+8. `npm install bulmaswatch`
