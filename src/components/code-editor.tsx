@@ -51,7 +51,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         semi: true,
         singleQuote: true,
       })
-      .replace(/\n$/, "");
+      .replace(/\n$/, '');
 
     // set the formatted value back in the editor
     editorRef.current.setValue(formatted);
@@ -77,6 +77,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
           showUnused: false,
           folding: false,
           lineNumbersMinChars: 3,
+          fontSize: 16,
           scrollBeyondLastLine: false,
           automaticLayout: true,
         }}
