@@ -30,3 +30,7 @@
 --------
 ### Adding Resizable Panes
 `npm install --save-exact react-resizable@1.11.0 @types/react-resizable@1.7.2`
+
+--------
+### Markdown Editor
+`npm install --save-exact @uiw/react-md-md-editor@2.1.1`
