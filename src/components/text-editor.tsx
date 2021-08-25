@@ -1,3 +1,4 @@
+import "./text-editor.css";
 import MDEditor from "@uiw/react-md-editor";
 import { useEffect, useRef, useState } from "react";
 
@@ -7,19 +8,19 @@ const TextEditor: React.FC = () => {
 
   useEffect(() => {
     const listener = (event: MouseEvent) => {
-      console.log("REF: ", ref.current);
-      console.log(event.target);
+      // console.log("REF: ", ref.current);
+      // console.log(event.target);
 
       if (
         ref.current &&
         event.target &&
         ref.current.contains(event.target as Node)
       ) {
-        console.log("Element clicked on is inside Text Editor");
+        // console.log("Element clicked on is inside Text Editor");
         return;
       }
 
-      console.log("Element clicked on is not inside Text Editor");
+      // console.log("Element clicked on is not inside Text Editor");
       setEditing(false);
     };
     document.addEventListener("click", listener, { capture: true });
