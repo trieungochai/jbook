@@ -34,3 +34,7 @@
 --------
 ### Markdown Editor
 `npm install --save-exact @uiw/react-md-md-editor@2.1.1`
+
+--------
+### Redux
+`npm install --save-exact @types/react-redux@7.1.15 react-redux@7.2.2 redux@4.0.5 redux-thunk@2.3.0 axios@0.21.1`
