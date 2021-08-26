@@ -18,7 +18,7 @@ const initialState: CellsState = {
   data: {},
 };
 
-const reducer = (
+const cellsReducer = (
   state: CellsState = initialState,
   action: Action
 ): CellsState => {
@@ -36,4 +36,4 @@ const reducer = (
   }
 };
 
-export default reducer;
+export default cellsReducer;
