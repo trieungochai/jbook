@@ -8,9 +8,6 @@
 `npm view react dist.tarball` (https://registry.npmjs.org/react/-/react-17.0.2.tgz)
 
 --------
-`npm install axios`
-
---------
 ### Implementing a Caching Layer (Crazy Numbers of Requests)
 `npm install localforage`
 
