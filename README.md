@@ -35,3 +35,7 @@
 --------
 ### Redux
 `npm install --save-exact @types/react-redux@7.1.15 react-redux@7.2.2 redux@4.0.5 redux-thunk@2.3.0 axios@0.21.1`
+
+--------
+### Immer simplifies handling immutable data structures
+`npm install immer`
