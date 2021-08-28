@@ -18,7 +18,7 @@ export const updateCell = (id: string, content: string): UpdateCellAction => {
     },
   };
 };
-
+ 
 export const deleteCell = (id: string): DeleteCellAction => {
   return {
     type: ActionType.DELETE_CELL,
