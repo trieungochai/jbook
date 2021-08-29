@@ -4,9 +4,9 @@ import {
   UpdateCellAction,
   DeleteCellAction,
   InsertCellBeforeAction,
+  Direction,
 } from "../actions";
 import { CellTypes } from "../cell";
-import { Direction } from "../actions";
 
 export const updateCell = (id: string, content: string): UpdateCellAction => {
   return {
