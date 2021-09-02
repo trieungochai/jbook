@@ -8,7 +8,7 @@
   opacity: 1;
 }
 
-.force-visible .add-cell {
+.add-cell .force-visible {
   opacity: 1;
 }
 
