@@ -12,7 +12,6 @@ import {
 import { CellTypes } from "../cell";
 import { Dispatch } from "redux";
 import bundle from "../../bundler";
-import { async } from "q";
 
 export const updateCell = (id: string, content: string): UpdateCellAction => {
   return {
