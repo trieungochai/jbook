@@ -63,3 +63,11 @@
 ### Font Awesome
 
 `npm install @fortawesome/fontawesome-free`
+
+---
+
+### This is one easy way to implement our desired architecture
+
+- `start`: Start a development server for the React app
+- `build`: Build a production-ready bundle for the React assets
+- `serve`: Start up the local Node API to serve up the production react assets + read/write to a notebook file
